@@ -59,7 +59,8 @@ for j in range(6,9):
 #print npd_discr
 """
 
-X_train, X_test, y_train, y_test = train_test_split(npd, npd["mll"], test_size=0.33, random_state=1)
+#X_train, X_test, y_train, y_test = train_test_split(npd, npd["mll"], test_size=0.33, random_state=1)
+X_train, X_test, y_train, y_test = train_test_split(npd, npd, test_size=0.33, random_state=1)
 n_inputs = npd.shape[1]
 # scale data
 t = MinMaxScaler()
